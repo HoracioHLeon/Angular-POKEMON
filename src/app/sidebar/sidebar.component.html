@@ -1,0 +1,18 @@
+<div>
+    <h3 class="title">Lista de favoritos</h3>
+</div>
+<div class="divider"></div>
+<div>
+    <ul class="favorite-list" style="list-style: none;">
+        <li *ngFor="let Pokemon of listPokemons">
+            <div class="card">
+                <img class="mini-image" [src]="Pokemon ?.data ?.img" alt ="">
+            </div>
+            <div>
+                <div class="title-inside">
+                    {{Pokemon ?.data ?.name}}
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

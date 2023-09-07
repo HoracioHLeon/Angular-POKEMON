@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="dataEntrante ?.img" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{dataEntrante ?.name}}</h5>
+      <p class="card-text">{{dataEntrante ?.url}}</p>
+    </div>
+    <div>
+        <button class="favorito" (click)="AddFavorito()">Añadir favorito</button>
+    </div>
+</div>
